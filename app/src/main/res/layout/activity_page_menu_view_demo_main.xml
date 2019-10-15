@@ -6,14 +6,14 @@
     android:background="#FFFFFF"
     android:orientation="vertical">
 
-    <com.sinothk.menu.pageMenu.PageMenuLayout
+    <com.sinothk.menu.pageMenu.PageMenuView
         android:id="@+id/pagemenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:pagemenu_row_count="2"
         app:pagemenu_span_count="4" />
 
-    <com.sinothk.plugin.menu.pageMenu.demo.widget.IndicatorView
+    <com.sinothk.menu.pageMenu.IndicatorView
         android:id="@+id/main_home_entrance_indicator"
         android:layout_width="match_parent"
         android:layout_height="32dp"

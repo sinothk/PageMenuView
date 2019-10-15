@@ -11,7 +11,7 @@ import android.view.View;
  */
 public interface PageMenuViewHolderCreator {
 
-    AbstractHolder createHolder(View itemView);
-
     int getLayoutId();
+
+    AbstractHolder createHolder(View itemView);
 }

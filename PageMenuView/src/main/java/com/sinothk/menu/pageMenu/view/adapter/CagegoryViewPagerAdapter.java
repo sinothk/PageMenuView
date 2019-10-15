@@ -1,4 +1,4 @@
-package com.sinothk.plugin.menu.pageMenu.demo.adapter;
+package com.sinothk.menu.pageMenu.view.adapter;
 
 import android.view.View;
 import android.view.ViewGroup;

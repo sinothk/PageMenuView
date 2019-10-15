@@ -1,4 +1,4 @@
-package com.sinothk.plugin.menu.pageMenu.demo.widget;
+package com.sinothk.menu.pageMenu;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,11 +14,11 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import com.sinothk.plugin.menu.pageMenu.demo.R;
-import com.sinothk.plugin.menu.pageMenu.demo.utils.ScreenUtil;
+import com.sinothk.menu.pageMenu.view.utils.ScreenUtil;
 
 /**
  * Author: Mr.xiao on 2017/5/23
+ *
  * @mail:xhb_199409@163.com
  * @github:https://github.com/xiaohaibin
  * @describe: 指示器
@@ -58,7 +58,7 @@ public class IndicatorView extends View {
             TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.IndicatorView);
             indicatorColor = typedArray.getColor(R.styleable.IndicatorView_indicatorColor, Color.rgb(0, 0, 0));
             indicatorColorSelected = typedArray.getColor(R.styleable.IndicatorView_indicatorColorSelected, Color.rgb(0, 0, 0));
-            indicatorWidth = ScreenUtil.dip2px(typedArray.getInt(R.styleable.IndicatorView_indicatorWidth, 0));
+            indicatorWidth = ScreenUtil.dip2px(context, typedArray.getInt(R.styleable.IndicatorView_indicatorWidth, 0));
             gravity = typedArray.getInt(R.styleable.IndicatorView_gravity, 0);
             typedArray.recycle();
         }

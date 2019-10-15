@@ -27,7 +27,7 @@ import java.util.List;
  * describe: 分页菜单控件
  * @author xiao.haibin
  */
-public class PageMenuLayout<T> extends RelativeLayout {
+public class PageMenuView<T> extends RelativeLayout {
     private static final int DEFAULT_ROW_COUNT = 2;
     private static final int DEFAULT_SPAN_COUNT = 5;
     private CustomViewPager mViewPager;
@@ -40,15 +40,15 @@ public class PageMenuLayout<T> extends RelativeLayout {
      */
     private int mSpanCount = DEFAULT_SPAN_COUNT;
 
-    public PageMenuLayout(Context context) {
+    public PageMenuView(Context context) {
         this(context, null, 0);
     }
 
-    public PageMenuLayout(Context context, @Nullable AttributeSet attrs) {
+    public PageMenuView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public PageMenuLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public PageMenuView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initView(context, attrs);
     }
@@ -56,10 +56,10 @@ public class PageMenuLayout<T> extends RelativeLayout {
     private void initView(Context context, AttributeSet attrs) {
         mViewPager = new CustomViewPager(context);
         addView(mViewPager, new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.PageMenuLayout);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.PageMenuView);
         if (typedArray != null) {
-            mRowCount = typedArray.getInteger(R.styleable.PageMenuLayout_pagemenu_row_count, DEFAULT_ROW_COUNT);
-            mSpanCount = typedArray.getInteger(R.styleable.PageMenuLayout_pagemenu_span_count, DEFAULT_SPAN_COUNT);
+            mRowCount = typedArray.getInteger(R.styleable.PageMenuView_pagemenu_row_count, DEFAULT_ROW_COUNT);
+            mSpanCount = typedArray.getInteger(R.styleable.PageMenuView_pagemenu_span_count, DEFAULT_SPAN_COUNT);
             typedArray.recycle();
         }
 

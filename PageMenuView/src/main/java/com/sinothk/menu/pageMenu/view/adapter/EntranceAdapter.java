@@ -1,4 +1,4 @@
-package com.sinothk.plugin.menu.pageMenu.demo.adapter;
+package com.sinothk.menu.pageMenu.view.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,9 +12,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.sinothk.plugin.menu.pageMenu.demo.R;
-import com.sinothk.plugin.menu.pageMenu.demo.model.ModelHomeEntrance;
-import com.sinothk.plugin.menu.pageMenu.demo.utils.ScreenUtil;
+import com.sinothk.menu.pageMenu.R;
+import com.sinothk.menu.pageMenu.view.model.ModelHomeEntrance;
+import com.sinothk.menu.pageMenu.view.utils.ScreenUtil;
 
 import java.util.List;
 
@@ -96,7 +96,7 @@ public class EntranceAdapter extends RecyclerView.Adapter<EntranceAdapter.Entran
             super(itemView);
             entranceIconImageView = itemView.findViewById(R.id.entrance_image);
             entranceNameTextView = itemView.findViewById(R.id.entrance_name);
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, (int) ((float) ScreenUtil.getScreenWidth() / 4.0f));
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, (int) ((float) ScreenUtil.getScreenWidth(mContext) / 4.0f));
             itemView.setLayoutParams(layoutParams);
         }
     }

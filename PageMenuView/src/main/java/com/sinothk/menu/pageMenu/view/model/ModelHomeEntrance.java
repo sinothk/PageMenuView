@@ -1,4 +1,4 @@
-package com.sinothk.plugin.menu.pageMenu.demo.model;
+package com.sinothk.menu.pageMenu.view.model;
 
 /**
  * Author: Mr.xiao on 2017/5/23
@@ -8,6 +8,7 @@ package com.sinothk.plugin.menu.pageMenu.demo.model;
  * @describe:菜单项实体类
  */
 public class ModelHomeEntrance {
+
     private String name = "";
     private int image;
 
@@ -25,5 +26,11 @@ public class ModelHomeEntrance {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public void setImage(int image) {
+        this.image = image;
+    }
 }
