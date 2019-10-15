@@ -5,14 +5,12 @@
     android:layout_height="wrap_content"
     android:background="#FFFFFF"
     android:orientation="vertical">
-
     <com.sinothk.menu.pageMenu.PageMenuView
         android:id="@+id/pagemenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:pagemenu_row_count="2"
         app:pagemenu_span_count="4" />
-
     <com.sinothk.menu.pageMenu.IndicatorView
         android:id="@+id/main_home_entrance_indicator"
         android:layout_width="match_parent"
@@ -24,6 +22,4 @@
         app:indicatorColor="#668b8989"
         app:indicatorColorSelected="#FF5722"
         app:indicatorWidth="6" />
-
-
 </LinearLayout>
