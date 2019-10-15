@@ -163,5 +163,5 @@ PageMenuView
           data.add(new ModelHomeEntrance("全部分类", R.drawable.ic_category_15));
       }
     
-   
+   [](){https://github.com/sinothk/PageMenuView/blob/master/app/imgs/iamges.png}
     
