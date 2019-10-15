@@ -1,4 +1,4 @@
-package com.sinothk.plugin.menu.pageMenu;
+package com.sinothk.menu.pageMenu;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.sinothk.plugin.menu.pageMenu.test", appContext.getPackageName());
+        assertEquals("com.sinothk.menu.pageMenu.test", appContext.getPackageName());
     }
 }

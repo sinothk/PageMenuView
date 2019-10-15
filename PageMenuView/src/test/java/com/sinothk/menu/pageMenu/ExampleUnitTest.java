@@ -1,4 +1,4 @@
-package com.sinothk.plugin.menu.pageMenu;
+package com.sinothk.menu.pageMenu;
 
 import org.junit.Test;
 
