@@ -4,14 +4,13 @@
     package="com.sinothk.plugin.menu.pageMenu.demo">
 
     <application
-        android:name=".MyApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".PageMenuViewDemoMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
